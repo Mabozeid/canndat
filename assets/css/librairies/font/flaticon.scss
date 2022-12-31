@@ -1,0 +1,145 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?4752ca8f712ef37dbfd77b30b0f5bc4b") format("truetype"),
+url("./flaticon.woff?4752ca8f712ef37dbfd77b30b0f5bc4b") format("woff"),
+url("./flaticon.woff2?4752ca8f712ef37dbfd77b30b0f5bc4b") format("woff2"),
+url("./flaticon.eot?4752ca8f712ef37dbfd77b30b0f5bc4b#iefix") format("embedded-opentype"),
+url("./flaticon.svg?4752ca8f712ef37dbfd77b30b0f5bc4b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "logout": "\f101",
+    "password": "\f102",
+    "menu": "\f103",
+    "add-group": "\f104",
+    "placeholder": "\f105",
+    "location": "\f106",
+    "route": "\f107",
+    "maps-and-location": "\f108",
+    "electricity": "\f109",
+    "home": "\f10a",
+    "list": "\f10b",
+    "menu-1": "\f10c",
+    "conveyor-belt": "\f10d",
+    "inventory": "\f10e",
+    "data-classification": "\f10f",
+    "stocks": "\f110",
+    "shopping-items": "\f111",
+    "submit": "\f112",
+    "data-transfer": "\f113",
+    "location-1": "\f114",
+    "admin": "\f115",
+    "search": "\f116",
+    "recycle-bin": "\f117",
+    "email": "\f118",
+    "users": "\f119",
+    "project": "\f11a",
+    "payment-check": "\f11b",
+    "people": "\f11c",
+    "seo-report": "\f11d",
+    "menu-2": "\f11e",
+);
+
+.flaticon-logout:before {
+    content: map-get($flaticon-map, "logout");
+}
+.flaticon-password:before {
+    content: map-get($flaticon-map, "password");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon-map, "menu");
+}
+.flaticon-add-group:before {
+    content: map-get($flaticon-map, "add-group");
+}
+.flaticon-placeholder:before {
+    content: map-get($flaticon-map, "placeholder");
+}
+.flaticon-location:before {
+    content: map-get($flaticon-map, "location");
+}
+.flaticon-route:before {
+    content: map-get($flaticon-map, "route");
+}
+.flaticon-maps-and-location:before {
+    content: map-get($flaticon-map, "maps-and-location");
+}
+.flaticon-electricity:before {
+    content: map-get($flaticon-map, "electricity");
+}
+.flaticon-home:before {
+    content: map-get($flaticon-map, "home");
+}
+.flaticon-list:before {
+    content: map-get($flaticon-map, "list");
+}
+.flaticon-menu-1:before {
+    content: map-get($flaticon-map, "menu-1");
+}
+.flaticon-conveyor-belt:before {
+    content: map-get($flaticon-map, "conveyor-belt");
+}
+.flaticon-inventory:before {
+    content: map-get($flaticon-map, "inventory");
+}
+.flaticon-data-classification:before {
+    content: map-get($flaticon-map, "data-classification");
+}
+.flaticon-stocks:before {
+    content: map-get($flaticon-map, "stocks");
+}
+.flaticon-shopping-items:before {
+    content: map-get($flaticon-map, "shopping-items");
+}
+.flaticon-submit:before {
+    content: map-get($flaticon-map, "submit");
+}
+.flaticon-data-transfer:before {
+    content: map-get($flaticon-map, "data-transfer");
+}
+.flaticon-location-1:before {
+    content: map-get($flaticon-map, "location-1");
+}
+.flaticon-admin:before {
+    content: map-get($flaticon-map, "admin");
+}
+.flaticon-search:before {
+    content: map-get($flaticon-map, "search");
+}
+.flaticon-recycle-bin:before {
+    content: map-get($flaticon-map, "recycle-bin");
+}
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}
+.flaticon-users:before {
+    content: map-get($flaticon-map, "users");
+}
+.flaticon-project:before {
+    content: map-get($flaticon-map, "project");
+}
+.flaticon-payment-check:before {
+    content: map-get($flaticon-map, "payment-check");
+}
+.flaticon-people:before {
+    content: map-get($flaticon-map, "people");
+}
+.flaticon-seo-report:before {
+    content: map-get($flaticon-map, "seo-report");
+}
+.flaticon-menu-2:before {
+    content: map-get($flaticon-map, "menu-2");
+}

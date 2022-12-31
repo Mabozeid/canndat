@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="canndat repeated info store" />
+    <meta name="keywords" content="canndat repeated info store, advanced," />
+
+    <!-- Main Page Title -->
+    <title>Canndat - Repeated Info Store</title>
+    <!-- Google Font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700&amp;display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800"
+    />
+    <!-- Bootstrap 4 css -->
+    <link rel="stylesheet" href="assets/css/librairies/bootstrap.min.css" />
+    <!-- IconFont Font Awesome  -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
+    <!-- IconFont Flaticon -->
+    <link rel="stylesheet" href="assets/css/librairies/font/flaticon.css" />
+    <!-- Main style css -->
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <section id="wrapper">
+      <!----nav bar-->
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid mx-2">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Canndat</a>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggle-navbar"
+            aria-controls="toggle-navbar"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <form class="d-flex">
+            <input
+              id="search"
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <!-- <div class="navbar-collapse collapse show" id="toggle-navbar"></div> -->
+        </div>
+      </nav>
+      <!----nav bar-->
+
+
+
+
+      <!--===============================================================
+                              start  Statistics  boxes
+         =====================================================================-->
+      <div class="contentCenter">
+        <aside class="sidebar" id="show-side-navigation1">
+          <ul class="categories list-unstyled ps-0">
+            <!--- dropdwon Item -->
+            <li class="has-dropdown mb-1">
+              <button
+                class="btn btn-toggle align-items-center rounded collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#home-collapse"
+                aria-expanded="false"
+              >
+                Main
+              </button>
+              <div class="collapse" id="home-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="index.html" class=""
+                      ><i class="flaticon-add-group"></i>Canndats</a
+                    >
+                  </li>
+                  <li>
+                    <a href="shortcuts.html" class=""
+                      ><i class="flaticon-people"></i>shortcuts</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!--- dropdwon Item -->
+
+
+            <!--- dropdwon Item -->
+            <li class="has-dropdown mb-1">
+              <button
+                class="btn btn-toggle align-items-center rounded collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#home-reports"
+                aria-expanded="false"
+              >
+                Reports
+              </button>
+              <div class="collapse" id="home-reports">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a href="#" class=""
+                      ><i class="flaticon-admin"></i>Dashboard</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class=""
+                      ><i class="flaticon-seo-report"></i>Report</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </aside>
+        
+            <div class="shortcuts">
+                <div class="converter">
+                  <div class="bytesValue">
+                    <h5>Convert Bytes</h5>
+                    <input type="text" id="conver-to-mega" placeholder="Bytes" />
+                  </div>
+                  <div class="bytesConverted">
+                    <p id="mega-converted"></p>
+                    <p id="giga-converted"></p>
+                  </div>
+                </div>
+
+                <div class="converter">
+                  <div class="MintuesValue">
+                    <h5>Convert Mintues</h5>
+                    <input type="text" id="conver-min" placeholder="Seconds"/>
+                  </div>
+                  <p id="mintues" ></p>
+                </div>
+
+                <div class="converter">
+                  <div class="NumbersValue">
+                    <h5>Convert Numbers</h5>
+                    <input type="text" id="convert-numbers" placeholder="Arabic Numbers"/>
+                  </div>
+                  <p id="numbers-converted"></p>
+                </div>
+
+                <div class="converter">
+                  <div class="rechargeValue">   
+                    <h5>Remove Taxes</h5>
+                    <input type="text" id="remove-taxes" placeholder="Recharge Amount"/>
+                  </div>
+                  <p id="net-balance"></p>
+                </div>
+
+                <div class="converter">
+                  <div class="taxesValue">
+                    <h5>Add Taxes</h5>
+                    <input type="text" id="add-taxes" placeholder="balance  Amount"/>
+                  </div>
+                  <p id="total-charge"></p>
+                </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--===============================================================
+                                       end   Statistics table 
+     =====================================================================-->
+
+     
+    <!--====================================================================
+                            Start Footer
+     ====================================================================-->
+
+
+     <footer class="footer">
+      <!-- Container -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Canndat.</h1>
+            <!-- Copyright By Me Mahmoud-abozied  -->
+            <div class="copyright text-center">
+              © 2022 Canndat  All Rights Reserved By
+              <a href="#">Mahmoud Abozeid</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Container -->
+    </footer>
+<!--====================================================================
+                  End Footer
+====================================================================-->
+
+
+    <!--====================================================================
+                            Include All Js File
+     ====================================================================-->
+    <!--  jQuery js  -->
+    <script src="assets/js/librairies/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap Js  -->
+    <script src="assets/js/librairies/bootstrap.min.js"></script>
+    <!-- Custom Code -->
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?4752ca8f712ef37dbfd77b30b0f5bc4b") format("truetype"),
+url("./flaticon.woff?4752ca8f712ef37dbfd77b30b0f5bc4b") format("woff"),
+url("./flaticon.woff2?4752ca8f712ef37dbfd77b30b0f5bc4b") format("woff2"),
+url("./flaticon.eot?4752ca8f712ef37dbfd77b30b0f5bc4b#iefix") format("embedded-opentype"),
+url("./flaticon.svg?4752ca8f712ef37dbfd77b30b0f5bc4b#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-logout:before {
+    content: "\f101";
+}
+.flaticon-password:before {
+    content: "\f102";
+}
+.flaticon-menu:before {
+    content: "\f103";
+}
+.flaticon-add-group:before {
+    content: "\f104";
+}
+.flaticon-placeholder:before {
+    content: "\f105";
+}
+.flaticon-location:before {
+    content: "\f106";
+}
+.flaticon-route:before {
+    content: "\f107";
+}
+.flaticon-maps-and-location:before {
+    content: "\f108";
+}
+.flaticon-electricity:before {
+    content: "\f109";
+}
+.flaticon-home:before {
+    content: "\f10a";
+}
+.flaticon-list:before {
+    content: "\f10b";
+}
+.flaticon-menu-1:before {
+    content: "\f10c";
+}
+.flaticon-conveyor-belt:before {
+    content: "\f10d";
+}
+.flaticon-inventory:before {
+    content: "\f10e";
+}
+.flaticon-data-classification:before {
+    content: "\f10f";
+}
+.flaticon-stocks:before {
+    content: "\f110";
+}
+.flaticon-shopping-items:before {
+    content: "\f111";
+}
+.flaticon-submit:before {
+    content: "\f112";
+}
+.flaticon-data-transfer:before {
+    content: "\f113";
+}
+.flaticon-location-1:before {
+    content: "\f114";
+}
+.flaticon-admin:before {
+    content: "\f115";
+}
+.flaticon-search:before {
+    content: "\f116";
+}
+.flaticon-recycle-bin:before {
+    content: "\f117";
+}
+.flaticon-email:before {
+    content: "\f118";
+}
+.flaticon-users:before {
+    content: "\f119";
+}
+.flaticon-project:before {
+    content: "\f11a";
+}
+.flaticon-payment-check:before {
+    content: "\f11b";
+}
+.flaticon-people:before {
+    content: "\f11c";
+}
+.flaticon-seo-report:before {
+    content: "\f11d";
+}
+.flaticon-menu-2:before {
+    content: "\f11e";
+}
