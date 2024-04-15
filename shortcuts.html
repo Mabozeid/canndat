@@ -43,7 +43,7 @@
   </head>
 
   <body>
-    <section id="wrapper">
+    <section id="wrapper" class="wrapper">
       <!----nav bar-->
       <nav class="navbar navbar-expand-md">
         <div class="container-fluid mx-2">
@@ -63,15 +63,21 @@
             <i class="fas fa-bars"></i>
           </button>
 
-          <form class="d-flex">
-            <input
-              id="search"
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-          </form>
+          <div class="search-bar">
+            <form class="d-flex">
+              <input
+                id="search"
+                class="form-control me-2"
+                type="search"
+                placeholder="Canned Name"
+                aria-label="Search"
+              />
+              <span class="search-icon">
+                <i class="fas fa-search"></i>
+              </span>
+
+                </form>
+          </div>
           <!-- <div class="navbar-collapse collapse show" id="toggle-navbar"></div> -->
         </div>
       </nav>
@@ -141,52 +147,93 @@
             </li>
           </ul>
         </aside>
-        
-            <div class="shortcuts">
-                <div class="converter">
-                  <div class="bytesValue">
-                    <h5>Convert Bytes</h5>
-                    <input type="text" id="conver-to-mega" placeholder="Bytes" />
-                  </div>
-                  <div class="bytesConverted">
-                    <p id="mega-converted"></p>
-                    <p id="giga-converted"></p>
-                  </div>
-                </div>
 
-                <div class="converter">
-                  <div class="MintuesValue">
-                    <h5>Convert Mintues</h5>
-                    <input type="text" id="conver-min" placeholder="Seconds"/>
-                  </div>
-                  <p id="mintues" ></p>
-                </div>
+        <div class="container">
+          <div class=" row shortcuts">
 
-                <div class="converter">
-                  <div class="NumbersValue">
-                    <h5>Convert Numbers</h5>
-                    <input type="text" id="convert-numbers" placeholder="Arabic Numbers"/>
-                  </div>
-                  <p id="numbers-converted"></p>
-                </div>
-
-                <div class="converter">
-                  <div class="rechargeValue">   
-                    <h5>Remove Taxes</h5>
-                    <input type="text" id="remove-taxes" placeholder="Recharge Amount"/>
-                  </div>
-                  <p id="net-balance"></p>
-                </div>
-
-                <div class="converter">
-                  <div class="taxesValue">
-                    <h5>Add Taxes</h5>
-                    <input type="text" id="add-taxes" placeholder="balance  Amount"/>
-                  </div>
-                  <p id="total-charge"></p>
-                </div>
-                
+            <div class=" row converter">
+              <div class="col col-xs-12 bytesValue">
+                <h5>Convert Bytes</h5>
+                <input type="text" id="conver-to-mega" placeholder="Bytes" />
+              </div>
+              <div class=" col col-xs-12 bytesConverted">
+                <p id="mega-converted"></p>
+                <p id="giga-converted"></p>
+              </div>
             </div>
+
+            <div class="row converter">
+              <div class="col-12">
+                <h5>Count Usage </h5>
+                </div>
+                <div class="col-12 usageCount">
+                  <input type="text" id="bssQuota" placeholder="Quota BSS"/>
+                  <input type="text" id="unusedBSS" placeholder="Remaining BSS"/>
+                  <!-- <input type="text" id="remaining" class="countUsagBox" placeholder="Remaining Megabytes"/> -->
+                  <p id="remaining" > </p>
+                  <p id="consumed" > </p>
+                  <!-- <input type="text" id="consumed" class="countUsageBox" placeholder="Consumed Megabytes"/> -->
+                </div>
+
+              </div>
+
+            <div class="row converter">
+              <div class="col col-xs-12 MintuesValue">
+                <h5>Convert Mintues</h5>
+                <input type="text" id="conver-min" placeholder="Seconds"/>
+              </div>
+              <div class="col col-xs-12 mintues">
+                <p id="mintues" ></p>
+              </div>
+
+            </div>
+
+            <div class="row converter">
+              <div class="col col-xs-12 NumbersValue">
+                <h5>Convert Numbers</h5>
+                <input type="text" id="convert-numbers" placeholder="Arabic Numbers"/>
+              </div >
+              <div class="col col-xs-12 numbers">
+                <p id="numbers-converted"></p>
+              </div>
+
+            </div>
+
+            <div class="row converter">
+              <div class="col col-xs-12 rechargeValue">   
+                <h5>Remove Taxes</h5>
+                <input type="text" id="remove-taxes" placeholder="Recharge Amount"/>
+              </div>
+              <div class="col col-xs-12">
+                <p id="net-balance"></p>
+              </div>
+
+            </div>
+
+            <div class="row converter">
+              <div class="col col-xs-12 taxesValue">
+                <h5>Add Taxes</h5>
+                <input type="text" id="add-taxes" placeholder="balance  Amount"/>
+              </div>
+              <div class="col col-xs-12">
+                <p id="total-charge"></p>
+              </div>
+
+            </div>
+            
+            <div class="row converter">
+              <div class="col col-xs-12 taxesValue">
+                <h5>Add Bill Taxes</h5>
+                <input type="text" id="addBillTaxes" placeholder="bill without taxes"/>
+              </div>
+              <div class="col col-xs-12">
+                <p id="totalBill"></p>
+              </div>
+
+            </div>
+        </div>
+        </div>
+
           </div>
         </div>
       </div>

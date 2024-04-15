@@ -7,15 +7,23 @@ var  megaOutput = document.getElementById("mega-converted"),
   numbersArabic = document.getElementById("convert-numbers"),
   numbersConvert = document.getElementById("numbers-converted"),
   p = document.querySelectorAll(".item-msg"),
+  bssQuota = document.getElementById("bssQuota"),
+  unusedBSSQuota = document.getElementById("unusedBSS"),
+  remainingMega = document.getElementById("remaining"),
+  consumedMega = document.getElementById("consumed"),
   copied = document.querySelectorAll(".coopy"),
   seacrhBtn = document.getElementById("search"),
   balance = document.getElementById("net-balance"),
   totalCharge = document.getElementById("total-charge"),
+  billTaxes = document.getElementById("addBillTaxes"),
+  billAmount = document.getElementById("totalBill"),
   mintues = document.getElementById("mintues"),
  addBlog = document.querySelector(".addBlog"),
  headInfo = document.querySelector("#headInfo"),
  cannedInfo = document.querySelector("#cannedInfo"), 
  CannedContainer = document.querySelector(".msg-container");
+ 
+
 // End   Setting Variables // 
 
  
@@ -61,6 +69,23 @@ gigaOutput.textContent = (result / 1024).toFixed(2) + " Giga"
 });
 // End  Convert Bytes to mega and Giga   // 
 
+// Start Convert  Second to mintues  // 
+$("#conver-min").on("keyup keypress blur change paste copy ", function(e) {
+  var amount = this.value
+  mintues.textContent = (amount / 60).toFixed(2);
+  });
+  // End Convert  Second to mintues  // 
+
+// Start Count usage   // 
+$('#unusedBSS').on("keyup keypress blur change paste copy ", function(e) { 
+  var remain = this.value 
+ var quota =  $('#bssQuota').val();
+ console.log(quota)
+ remainingMega.textContent = (+remain/ 1024 / 1024).toFixed(2) + " Remaining MB"
+ consumedMega.textContent = (quota / 1024 / 1024) - (remain /1024 /1024).toFixed(2) + " consumed MB"
+  });
+  // End  Count usage   // 
+  
 // Start remove  taxes  // 
 $('#remove-taxes').on("keyup keypress blur change paste copy ", function(e) {
 var recharge = this.value
@@ -73,15 +98,16 @@ $('#add-taxes').on("keyup keypress blur change paste copy ", function(e) {
 var amount = this.value
 totalCharge.textContent = (amount / (1 - 30 / 100)).toFixed(2);
 });
-// Start Add  taxes  // 
+// end Add  taxes  // 
 
-// Start Convert  Second to mintues  // 
-$("#conver-min").on("keyup keypress blur change paste copy ", function(e) {
-var amount = this.value
-mintues.textContent = (amount / 60).toFixed(2);
-});
-// End Convert  Second to mintues  // 
 
+// Start Add bill taxes  // 
+$('#addBillTaxes').on("keyup keypress blur change paste copy ", function(e) {
+  var serviceAmount = this.value
+  var taxBasic = +serviceAmount + 10.67;
+  billAmount.textContent =  ( taxBasic + (taxBasic * 23.12 / 100)).toFixed(2);
+  });
+  // end Add bill taxes // 
 
 
 
@@ -134,7 +160,7 @@ function addMsgToPageFrom(arrayOfMsg) {
   CannedContainer.innerHTML = "";
   arrayOfMsg.map((x,index) => {
   CannedContainer.innerHTML += `
-  <div class="flex-col">
+  <div class="col-md-4 col-xs-12">
   <div class= "item-msg">
   <label>${x.head}</label>
   <p class="p">${x.canned}</p>
@@ -211,44 +237,14 @@ console.log(copied)
 // }
 // };
 
-
-
 // Start Copy to Clipboard Button // 
 
 
 $(".coopy").on("click", function(e) {
-
   var textWanted = $(this).siblings("p").text()
   navigator.clipboard.writeText(textWanted) 
   console.log("test",textWanted)
 });
 
 
-
 // End Copy to Clipboard Button //
-
-// start  Copy to Clipboard test // 
-
-// function copyFuncation() {
-//   /* Get the text field */
-//   var copyText = document.getElementById("myInput");
-
-
-//   /* Select the text field */
-//   // copyText.select()
-
-//   /* Copy the text inside the text field */
-//   navigator.clipboard.writeText(copyText.value)
-// }
-// var coppier = document.getElementById("coppier")
-// $(coppier).on("click", function () {
-//   this.classList.add("mystyle")
-//   this.text("I have changed!");
-//   setTimeout(function () {
-//     $(coppier).text("I have changed!");
-//     $(coppier).removeClass("mystyle");
-
-//   }, 1500)
-// })
-
-// End  Copy to Clipboard test // 

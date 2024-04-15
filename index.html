@@ -43,7 +43,7 @@
   </head>
 
   <body>
-    <section id="wrapper">
+    <section id="wrapper" class="wrapper">
       <!----nav bar-->
       <nav class="navbar navbar-expand-md">
         <div class="container-fluid mx-2">
@@ -62,17 +62,22 @@
           >
             <i class="fas fa-bars"></i>
           </button>
+          <div class="search-bar">
+            <form class="d-flex">
+              <input
+                id="search"
+                class="form-control me-2"
+                type="search"
+                placeholder="Canned Name"
+                aria-label="Search"
+              />
+              <span class="search-icon">
+                <i class="fas fa-search"></i>
+              </span>
 
-          <form class="d-flex">
-            <input
-              id="search"
-              class="form-control me-2"
-              type="search"
-              placeholder="Canned Name"
-              aria-label="Search"
-            />
-            <!-- <i class="fas fa-search"></i> -->
-              </form>
+                </form>
+          </div>
+
           <!-- <div class="navbar-collapse collapse show" id="toggle-navbar"></div> -->
         </div>
       </nav>
@@ -101,12 +106,12 @@
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                   <li>
                     <a href="index.html" class=""
-                      ><i class="flaticon-add-group"></i>Canndats</a
+                      ><i class="flaticon-inventory"></i>Canndats</a
                     >
                   </li>
                   <li>
                     <a href="shortcuts.html" class=""
-                      ><i class="flaticon-people"></i>shortcuts</a
+                      ><i class="flaticon-project"></i>shortcuts</a
                     >
                   </li>
                 </ul>
@@ -143,125 +148,19 @@
           </ul>
         </aside>
 
-        <!-- <div class="item-msg" style="font-family: 'Tajawal', sans-serif">
-          <label>Header12</label>
-          <p class="p">
-            alias! Minima illo beatae fuga itaque modi?
-          </p>
-          <button class="coopy">copy to Clipboard  <i class="far fa-copy"></i> </button>
-        </div>
 
-        <div class="item-msg" style="font-family: 'Tajawal', sans-serif">
-          <label>Header12</label>
-          <p class="p">
-            Lorem ipsum dolor sit amet consectetur
-          </p>
-          <button class="coopy">copy to Clipboard  <i class="far fa-copy"></i> </button>
-        </div>
-
-        <div class="item-msg" style="font-family: 'Tajawal', sans-serif">
-          <label>Header12</label>
-          <p class="p">
-            fuga temporibus nulla ipsam nesciunt autem incidunt
-          </p>
-          <button class="coopy">copy to Clipboard  <i class="far fa-copy"></i> </button>
-        </div> -->
 
         <div class="dashboard-content" id="content">
           <div class="container">
               <!-- Button trigger modal -->
-              <button type="button" class="coopy" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <button type="button" class="addBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Add Canned Message
               </button>
-
-              <!-- <div class="item-msg" style="font-family: 'Tajawal', sans-serif">
-                <label>Header12</label>
-                <p class="p">
-                  alias! Minima illo beatae fuga itaque modi?
-                </p>
-                <button class="coopy">copy to Clipboard  <i class="far fa-copy"></i> </button>
-              </div>
-
-              <div class="item-msg" style="font-family: 'Tajawal', sans-serif">
-                <label>test</label>
-                <p class="p">
-                  alias! Minima illo beatae fuga itaque modi?
-                </p>
-                <button class="coopy">copy to Clipboard  <i class="far fa-copy"></i> </button>
-              </div>
-              <div class="item-msg" style="font-family: 'Tajawal', sans-serif">
-                <label>ali</label>
-                <p class="p">
-                  alias! Minima illo beatae fuga itaque modi?
-                </p>
-                <button class="coopy">copy to Clipboard  <i class="far fa-copy"></i> </button>
-              </div> -->
-
-            <!-- <input type="text" value="Hello World" id="myInput" />
-            <button id="coppier" onclick="copyFuncation()">Copy text</button> -->
-
-            <div class="flex-grid-thirds msg-container">
-              <!-- <div class="flex-col">
-                <div class="item-msg" style="font-family: 'Tajawal', sans-serif">
-                  <label>Header</label>
-                  <p class="p">
-                   Lorem ipsum dolor sit amet consectetur
-                  </p>
-                  <button class="coopy">copy to Clipboard  <i class="far fa-copy"></i> </button>
+              <div class="container">
+                <div class="row msg-container">
                 </div>
               </div>
-        
-              <div class="flex-col">
-                <div class="item-msg" style="font-family: 'Tajawal', sans-serif">
-                  <label>Header371</label>
-                  <p class="p">
-                    adipisicing elit. Eligendi id aliquam,Eligendi Eligendi
-                  </p>
-                  <button class="coopy">copy to Clipboard  <i class="far fa-copy"></i> </button>
-                </div>
-              </div>
-        
-              <div class="flex-col">
-                <div class="item-msg" style="font-family: 'Tajawal', sans-serif">
-                  <label>Header001</label>
-                  <p class="p">
-                    culpa commodi dicta libero saepe, Eligendi Eligendi
-                  </p>
-                  <button class="coopy">copy to Clipboard  <i class="far fa-copy"></i> </button>
-                </div>
-              </div>           
-              
-              <div class="flex-col">
-                <div class="item-msg" style="font-family: 'Tajawal', sans-serif">
-                  <label>Header1</label>
-                  <p class="p">
-                    fuga temporibus nulla ipsam nesciunt autem incidunt
-                  </p>
-                  <button class="coopy">copy to Clipboard  <i class="far fa-copy"></i> </button>
-                </div>
-              </div>   
 
-              <div class="flex-col">
-                <div class="item-msg" style="font-family: 'Tajawal', sans-serif">
-                  <label>Header12</label>
-                  <p class="p">
-                    alias! Minima illo beatae fuga itaque modi?
-                  </p>
-                  <button class="coopy">copy to Clipboard  <i class="far fa-copy"></i> </button>
-                </div>
-              </div>  
-
-              <div class="flex-col">
-                <div class="item-msg" style="font-family: 'Tajawal', sans-serif">
-                  <label>Header101</label>
-                  <p class="p">
-                    alias! Minima illo beatae fuga itaque modi?
-                  </p>
-                  <button class="coopy">copy to Clipboard  <i class="far fa-copy"></i> </button>
-                </div>
-              </div>  -->
-
-              </div>
           </div>
         </div>
       </div>
@@ -303,7 +202,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                      <h5 class="modal-title" id="staticBackdropLabel">canned Box</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
