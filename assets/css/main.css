@@ -309,7 +309,7 @@ input[type="tel"],
 input[type="search"],
 input[type="password"],
 input[type="subject"] {
-  height: 42px;
+  height: 43px;
     width: 400px;
 }
 
@@ -842,8 +842,29 @@ li {
   display: flex;
   gap: 20px;
 }
-.usageCount input{
+.usageCount input[type="text"]{
 width: 100% !important;
+}
+.form-check {
+  display: flex;
+  width: 100%;
+  background-color: #9c27b0;
+  border-radius: 18px;
+}
+.form-check  label {
+  padding: 10px 5px;
+  color: #fff;
+}
+.form-check  input[type="checkbox"] {
+  margin: 10px auto;
+  box-shadow: none;
+  border: none;
+  width: 16px;
+  height: 16px;
+}
+.form-check-input:checked {
+  background-color: #333;
+  border: none;
 }
 .converter p {
   padding: 10px;

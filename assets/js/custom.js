@@ -77,13 +77,27 @@ $("#conver-min").on("keyup keypress blur change paste copy ", function(e) {
   // End Convert  Second to mintues  // 
 
 // Start Count usage   // 
-$('#unusedBSS').on("keyup keypress blur change paste copy ", function(e) { 
+$('#unusedBSS, #bssQuota').on("keyup keypress blur change paste copy ", function(e) { 
   var remain = this.value 
  var quota =  $('#bssQuota').val();
  console.log(quota)
  remainingMega.textContent = (+remain/ 1024 / 1024).toFixed(2) + " Remaining MB"
- consumedMega.textContent = (quota / 1024 / 1024) - (remain /1024 /1024).toFixed(2) + " consumed MB"
+ consumedMega.textContent = (quota / 1024 / 1024)- (remain /1024 /1024).toFixed(2) + " consumed MB"
   });
+
+  $('#flexCheckDefault').on('change', function(){ 
+    var remain =  $('#unusedBSS').val();
+    var quota =  $('#bssQuota').val();
+    if(this.checked) 
+    {
+      remainingMega.textContent = (+remain/ 1024 / 1024/ 1024).toFixed(2) + " Remaining GB"
+      consumedMega.textContent = (quota / 1024 / 1024 /1024)- (remain /1024 /1024 /1024).toFixed(2) + " consumed GB"
+     }
+     else{
+      remainingMega.textContent = (+remain/ 1024 / 1024).toFixed(2) + " Remaining MB"
+      consumedMega.textContent = (quota / 1024 / 1024)- (remain /1024 /1024).toFixed(2) + " consumed MB"
+     }
+ })
   // End  Count usage   // 
   
 // Start remove  taxes  // 
