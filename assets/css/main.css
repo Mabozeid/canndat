@@ -842,9 +842,11 @@ li {
   display: flex;
   gap: 20px;
 }
+
 .usageCount input[type="text"]{
 width: 100% !important;
 }
+
 .form-check {
   display: flex;
   width: 100%;
